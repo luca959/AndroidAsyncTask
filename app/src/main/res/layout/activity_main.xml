@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/async"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:onClick="startTask"
+        android:text="Start Async Task"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:onClick="LocalTask"
+        android:text="start local task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/async" />
+
+    <Button
+        android:id="@+id/random_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="generate_rdm_str"
+        android:text="Generate Random string"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/local"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <TextView
+        android:id="@+id/async_text"
+        android:layout_width="184dp"
+        android:layout_height="82dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/local"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/async" />
+
+    <TextView
+        android:id="@+id/local_text"
+        android:layout_width="184dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="44dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/random_str"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/local"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:id="@+id/random_text"
+        android:layout_width="184dp"
+        android:layout_height="82dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/random_str" />
+
+</android.support.constraint.ConstraintLayout>
